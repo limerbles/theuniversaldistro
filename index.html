@@ -30,6 +30,24 @@
 </head>
 
 <body>
+  <!-- ======= 21 warning ======= -->
+  <div class="modal fade" id="warning" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">AGE VERIFICATION</h5>
+        </div>
+        <div class="modal-body">
+          This website contains age-restricted content. 
+          You must be above 21 years old to enter.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">I AM 21 OR OLD</button>
+          <button type="button" class="btn btn-dark" onclick="window.close();">I AM UNDER 21</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header-transparent">
@@ -230,7 +248,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    $('#warning').modal({show: true, backdrop: 'static', keyboard: false});
+  </script>
 </body>
 
 </html>
