@@ -474,7 +474,6 @@ section {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -484,7 +483,6 @@ section {
 .section-header .section-description {
   text-align: center;
   padding-bottom: 40px;
-  color: #999;
 }
 
 /* About Us Section
@@ -670,7 +668,7 @@ section {
   margin-bottom: 20px;
 }
 
-#contact .info {
+#contact .info, #contact .section-header {
   color: #333333;
 }
 
