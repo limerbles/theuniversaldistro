@@ -544,7 +544,6 @@ section {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/portfolio/bg.jpg) top center;
   background-size: cover;
   position: relative;
-  color: #fff;
   padding: 60px 0 60px;
 }
 #portfolio .container .section-header {
@@ -566,7 +565,6 @@ section {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: #ffffff;
   margin: 0 5px 10px 5px;
   transition: all ease-in-out 0.3s;
   background: white;
@@ -575,7 +573,7 @@ section {
 
 #portfolio .item-header {
   text-align: center;
-  margin-bottom: 2px;
+  margin: 15px 0 2px;
 }
 #portfolio .item-header2 {
   text-align: center;
@@ -584,7 +582,6 @@ section {
 
 #portfolio .portfolio-item {
   margin-bottom: 30px;
-  color: rgb(255, 255, 255);
   overflow: hidden;
 }
 
