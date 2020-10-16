@@ -547,6 +547,9 @@ section {
   color: #fff;
   padding: 60px 0 60px;
 }
+#portfolio .container .section-header {
+  margin-bottom: 40px;
+}
 
 #portfolio #portfolio-flters {
   padding: 0;
