@@ -129,17 +129,15 @@
       url: action,
       data: data,
       timeout: 40000
-    }).done( function(msg){
-      if (msg == 'OK') {
+    }).done( function(data){
+      console.log(data)
+      if (data.result === 'success') {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');
-      } else {
+      } else { 
         this_form.find('.loading').slideUp();
-        if(!msg) {
-          msg = 'Form submission failed and no error message returned from: ' + action + '<br>';
-        }
-        this_form.find('.error-message').slideDown().html(msg);
+        this_form.find('.error-message').slideDown().html('Form submission failed and no error message returned.');
       }
     }).fail( function(data){
       console.log(data);

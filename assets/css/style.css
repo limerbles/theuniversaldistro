@@ -637,6 +637,13 @@ section {
   font-size: 14px;
 }
 
+#contact .info a {
+  color: #fff;
+}
+#contact .info a:hover {
+    color: #2dc997;
+}
+
 #contact .info .email p {
   padding-top: 5px;
 }
