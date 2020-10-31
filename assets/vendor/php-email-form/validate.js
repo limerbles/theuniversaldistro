@@ -130,7 +130,6 @@
       data: data,
       timeout: 40000
     }).done( function(data){
-      console.log(data)
       if (data.result === 'success') {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
@@ -140,7 +139,6 @@
         this_form.find('.error-message').slideDown().html('Form submission failed and no error message returned.');
       }
     }).fail( function(data){
-      console.log(data);
       var error_msg = "Form submission failed!<br>";
       if(data.statusText || data.status) {
         error_msg += 'Status:';
